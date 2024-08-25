@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: {"https://viewtubes.netlify.app"},
+    origin: process.env.CORS_ORIGIN,
     credentials: true,
   })
 );
